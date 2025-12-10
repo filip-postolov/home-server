@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  web:
+    image: docker.io/library/nginx:latest
+    container_name: test_web
+    restart: unless-stopped
+    ports:
+      - "8443:80"
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
+
