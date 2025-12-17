@@ -3,7 +3,7 @@ version: "3.9"
 services:
   web:
     image: docker.io/library/nginx:latest
-    container_name: test_web
+    container_name: nginx
     restart: unless-stopped
     ports:
       - "8080:80"
